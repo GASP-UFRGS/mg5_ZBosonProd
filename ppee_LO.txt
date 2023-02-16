@@ -1,0 +1,10 @@
+import model loop_qcd_qed_sm-full
+generate p p > e+ e- / z
+output ppee_LO
+launch ppee_LO --name=ppbaree
+set lpp1 1
+set lpp2 -1 # p~
+set ebeam1 270.0 #GeV
+set ebeam2 270.0
+set nevents 100000
+print_results --path=./ppee_LO.txt --format=short

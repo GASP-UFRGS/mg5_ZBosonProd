@@ -1,0 +1,11 @@
+# NLO
+import model loop_qcd_qed_sm-full
+generate p p > e+ e- / z [noborn=QCD]
+output ppee_NLO_QCD
+launch ppee_NLO_QCD --name=ppbaree_NLO_QCD
+set lpp1 1
+set lpp2 -1 # p~
+set ebeam1 270.0 #GeV
+set ebeam2 270.0
+set nevents 100000
+print_results --path=./ppee_NLO_QCD.txt --format=short
