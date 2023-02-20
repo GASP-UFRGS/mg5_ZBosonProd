@@ -41,7 +41,7 @@ INNER = False; # (TRUE: -x < y < +x ; FALSE: y < -x AND y > +x)
 PTCUTUPPER = 9999.0; # (NO CUT 9999.0 )
 PTCUTLOWER = 0.0; # (NO CUT 0.0)
 
-LUMINOSITY = 10E59 #barn;
+LUMINOSITY = 10E35/10E24#barn;
 # INPUT FILES:
 #FILES   = [
 #"/home/public/aahbb.lhe",
