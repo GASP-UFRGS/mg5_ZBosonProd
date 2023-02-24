@@ -4,7 +4,7 @@ from math import *
 from ROOT import *
 
 #####################################################################
-# GGS (CERN-CMS/UFRGS) ---
+# Gustavo Gil (CERN-CMS/UFRGS) ---
 # the muons are collected considering the ID codes in the event
 # sample produced with SuperCHICv2 in LHE format.
 #####################################################################
@@ -13,12 +13,9 @@ from ROOT import *
 # USER INPUT:
 
 # CROSS SECTION(S) (pb):
-#xsec    = [ 1.7587434e-04 , 8.2134120e+03 , 0.74053598E+09 , 1.7856140e+01 , 2.2379938e-01 ]; #FIXME
-#xsec    = [5728, 1.251e+09 , 17.86 , 0.2238]; #FIXME
 xsec    = [27.09,6805,36.93]; #FIXME
 # PDF "_"+LABEL FOR OUTPUT FILES:
 JOB     = "histos";
-#PDF     = ['ppazbb' , 'ppbb' , 'pphbb' , 'ppzz' ]; #FIXME
 PDF     = ['ppee','ppee_NLO_QCD','ppzee']; #FIXME
 scale   = False;
 scale_yield = False;
@@ -43,18 +40,10 @@ PTCUTLOWER = 0.0; # (NO CUT 0.0)
 
 LUMINOSITY = 10E35/10E24#barn;
 # INPUT FILES:
-#FILES   = [
-#"/home/public/aahbb.lhe",
-#"/home/public/ppazbb.lhe",
-#"/home/public/ppbb.lhe",
-#"/home/public/pphbb.lhe",
-#"/home/public/ppzz.lhe"
-#]; #FIXME
-
 FILES = [
-"/home/deros/plotsZ/ppee.lhe",
-"/home/deros/plotsZ/ppee_NLO_QCD.lhe",
-"/home/deros/plotsZ/ppzee.lhe"
+"ppee.lhe",
+"ppee_NLO_QCD.lhe",
+"ppzee.lhe"
 ];
 
 # EVENT SAMPLE INPUT:
