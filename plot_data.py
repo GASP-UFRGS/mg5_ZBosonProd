@@ -6,7 +6,7 @@ from ROOT import *
 #####################################################################
 # Gustavo Gil (CERN-CMS/UFRGS) ---
 # the muons are collected considering the ID codes in the event
-# sample produced with SuperCHICv2 in LHE format.
+# sample produced with MadGraphv5 in LHE format.
 #####################################################################
 
 #####################################################################
