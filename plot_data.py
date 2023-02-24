@@ -111,17 +111,17 @@ for i in range(len(FILES)):
 
 	# SORTING THE DISTRIBUTIONS IN THE ARRAYS FOR EACH FILE:
 	# EACH ARRAYS IS FORMATTED LIKE: array[] = [plots_file1, plots_file2, plots_file3, ...
-        invm_decay.append(TH1D("1D_invm_decay"+"_"+PDF[i],"", 50,  20., 150.));
-        pt_decay.append(TH1D("1D_pt_decay"+"_"+PDF[i]	, "", 50,  0., 200.));
-        ptsum_decay.append(TH1D("1D_ptsum_decay"+"_"+PDF[i], "", 50,  0., 360.));
-        eta_decay.append(TH1D("1D_eta_decay"+"_"+PDF[i]	, "", 50,-10.,  10.));
-        phi_decay.append(TH1D("1D_phi_decay"+"_"+PDF[i]	, "", 10, -4.,   4.));
-        E_decay.append(TH1D("1D_E_decay"+"_"+PDF[i]	, "", 50,  0., 250.));
-        dpt_decay.append(TH1D("1D_dpt_decay"+"_"+PDF[i] , "", 50,  0.,   0.1));
-        acop.append(TH1D("1D_acop"+"_"+PDF[i]           , "", 50,  0.,  10.));
-        acop_zoom.append(TH1D("1D_acopz"+"_"+PDF[i]     , "", 50,  -.01,   1.));
-        dphi.append(TH1D("1D_dphi"+"_"+PDF[i]           , "", 50,  0., 181.));
-        dphi_zoom.append(TH1D("1D_dphiz"+"_"+PDF[i]     , "", 50,175., 180.1));
+        invm_decay.append(TH1D("1D_invm_decay"+"_"+PDF[i]  ,"", 50, 20., 150.));
+        pt_decay.append(TH1D("1D_pt_decay"+"_"+PDF[i]	   ,"", 50,  0., 200.));
+        ptsum_decay.append(TH1D("1D_ptsum_decay"+"_"+PDF[i],"", 50,  0., 360.));
+        eta_decay.append(TH1D("1D_eta_decay"+"_"+PDF[i]	   ,"", 50,-10.,  10.));
+        phi_decay.append(TH1D("1D_phi_decay"+"_"+PDF[i]	   ,"", 10, -4.,   4.));
+        E_decay.append(TH1D("1D_E_decay"+"_"+PDF[i]	   ,"", 50,  0., 250.));
+        dpt_decay.append(TH1D("1D_dpt_decay"+"_"+PDF[i]    ,"", 50,  0.,   0.1));
+        acop.append(TH1D("1D_acop"+"_"+PDF[i]              ,"", 50,  0.,  10.));
+        acop_zoom.append(TH1D("1D_acopz"+"_"+PDF[i]        ,"", 50,  -.01, 1.));
+        dphi.append(TH1D("1D_dphi"+"_"+PDF[i]              ,"", 50,  0., 181.));
+        dphi_zoom.append(TH1D("1D_dphiz"+"_"+PDF[i]        ,"", 50,175., 180.1));
 
 	# LOOP OVER LINES IN LHE SAMPLE:
 
