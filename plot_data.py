@@ -319,17 +319,15 @@ for l in range(len(histoslog)):
                 globals()["hs_histoslog"+str(l)].Draw("nostack hist");
         if scale:
                 if histoslog_varx[l] == "":
-                    globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("d#sigma/d"+str(histoslog_axis[l])+" (pb)");
+                        globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("d#sigma/d"+str(histoslog_axis[l])+" (pb)");
                 else:
-                    globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("d#sigma/d"+str(histoslog_axis[l])+" (pb/"+str(histoslog_varx[l])+")");
+                        globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("d#sigma/d"+str(histoslog_axis[l])+" (pb/"+str(histoslog_varx[l])+")");
         else:
-                 
                 globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("Events");
         if scale_yield:
                 globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("Yield");
         else:
                 globals()["hs_histoslog"+str(l)].GetYaxis().SetTitle("Events");
-
         if histoslog_varx[l] == "":
             globals()["hs_histoslog"+str(l)].GetXaxis().SetTitle(str(histoslog_axis[l]));
         else:
